@@ -43,23 +43,25 @@ p {
   padding: 20px;
 }
 
-#left_img {
-  width: 243px;
-  height: 672px;
-  object-fit: cover;
-  border-radius: 0px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
-  background-position: 62% 50%;
-  background-image: url(images/left-side-img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #left_img, #right_img {
   width: 200px;
   max-width: 30vw;
   height: auto;
 }
+
+#left_img {
+  width: 243px;
+  height: 672px;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  background-position: 51% 50%;
+  background-image: url(images/left-side-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 #right_img {
   width: 243px;
