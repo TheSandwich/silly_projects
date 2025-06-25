@@ -73,7 +73,6 @@ function checkAnswer() {
 
   } else {
     lives--;
-    livesDisplay.textContent = lives;
     updateHealthBar();
 
     if (lives > 0) {
