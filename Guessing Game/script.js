@@ -33,7 +33,9 @@ const challenges = [
   { image: "images/img31.jpg", answers: ["Needle Knight Leda", "needle knight leda"]},
   { image: "images/img32.webp", answers: ["Bayle The Dread", "bayle the dread"]},
   { image: "images/img33.webp", answers: ["Metyr Mother of Fingers", "metry mother of fingers", "Metry", "metry"]},
-  { image: "images/img34.jpg", answers: ["High Lord Wolnir", "high lord wolnir"]}
+  { image: "images/img34.jpg", answers: ["High Lord Wolnir", "high lord wolnir"]},
+  { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss"]}
+
 ];
 
 let remainingChallenges = [...challenges];
