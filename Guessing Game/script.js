@@ -16,7 +16,7 @@ const challenges = [
   { image: "images/img14.png", answers: ["Divine Beast Warrior", "divine beast warrior"]},
   { image: "images/img15.png", answers: ["Divine Beast Dancing Lion", "dvine beast dancing lion"]},
   { image: "images/img16.png", answers: ["Rellana", "rellana"]},
-  { image: "images/img17.jpg", answers: ["Winter Lantern", "winter lantern"]},
+  { image: "images/img17.jpg", answers: ["Aging Untouchable", "aging untouchable"]},
   { image: "images/img18.jpg", answers: ["Horned Warrior", "horned warrior"]},
   { image: "images/img19.png", answers: ["CurseBlade", "curseblade"]},
   { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss"]},
