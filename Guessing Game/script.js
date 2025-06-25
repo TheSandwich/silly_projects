@@ -52,6 +52,8 @@ function checkAnswer() {
 
   const correctAnswers = currentChallenge.answers.map(ans => ans.toLowerCase());
 
+  if (correctAnswers.includes(input)) {
+    feedback.textContent = "✅ Correct!";
 
     if (remainingChallenges.length > 0) {
       showNextChallenge();
@@ -75,6 +77,7 @@ function checkAnswer() {
 
   document.getElementById("userAnswer").value = "";
 }
+
 
 // Load the first image when the page loads
 window.onload = function () {
