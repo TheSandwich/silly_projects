@@ -22,8 +22,15 @@ p {
 .game-image {
   width: 100%;
   max-width: 400px;
-  margin: 20px 0;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
+
 
 .layout {
   display: flex;
