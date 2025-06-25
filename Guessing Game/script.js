@@ -26,7 +26,7 @@ const challenges = [
   { image: "images/img23.jpg", answers: ["Holy Knight Hodrick", "holy knight hodrick"]},
   { image: "images/img24.jpg", answers: ["Knight Slayer Tsorig", "knight slayer tsorig"]},
   { image: "images/img25.webp", answers: ["Putrescent Knight", "putrescent knight"]},
-  { image: "images/Images_29.webp", answers: ["Heolstor The Nightlord", "heolstor the nightlord"]},
+  { image: "images/Images_29.webp", answers: ["Heolstor The Nightlord", "heolstor the nightlord", "Heolstor", "heolstor"]},
   { image: "images/img26.webp", answers: ["Gladius", "gladius"]},
   { image: "images/img27.jpg", answers: ["Nito", "nito"]},
   { image: "images/img28.jpg", answers: ["Pursuer", "The Pursuer", "pursuer", "the pursuer"]},
