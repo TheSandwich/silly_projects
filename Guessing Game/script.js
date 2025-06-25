@@ -7,7 +7,7 @@ const challenges = [
   { image: "images/alonne_knight.webp", answers: ["alonne knight", "Alonne Knight"] },
   { image: "images/misbegotten.webp", answers: ["misbegotten", "Misbegotten"] },
   { image: "images/Stone_knight.webp", answers: ["Stone Knight", "stone knight"] },
-  { image: "images/forrest_grotesque_goblin", answers: ["Goblin", "goblin", "Forrest Grotesque Goblin"]},
+  { image: "images/forrest_grotesque_goblin.png", answers: ["Goblin", "goblin", "Forrest Grotesque Goblin"]},
   { image: "images/fume_sorcerer.png", answers: ["fume sorcerer", "Fume Sorcerer"]},
   { image: "images/imperfect.webp", answers: ["The Imperfect", "imperfect", "Imperfect", "the imperfect"]},
   { image: "images/corvian.jpg", answers: ["Corvian", "corvian"]},
@@ -20,28 +20,40 @@ const challenges = [
   { image: "images/horned_warrior.jpg", answers: ["Horned Warrior", "horned warrior"]},
   { image: "images/curseblade_bosses.png", answers: ["CurseBlade", "curseblade"]},
   { image: "images/messmer_soldier.jpg", answers: ["Messmer Soldier", "messmer soldier"]},
-  { image: "images/roayl_sentinel_enemy.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
+  { image: "images/royal_sentinel_enemy.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
   { image: "images/skeleton_beast.jpg", answers: ["Skeleton Beast", "skeleton beast"]},
-  { image: "images/", answers: ["Holy Knight Hodrick", "holy knight hodrick"]},
+  { image: "images/holy_knight_hodrick.jpg", answers: ["Holy Knight Hodrick", "holy knight hodrick"]},
   { image: "images/knight-slayer-tsorig.jpg", answers: ["Knight Slayer Tsorig", "knight slayer tsorig"]}
 
 ];
 
-let current = 0;
+let remainingChallenges = [...challenges];
+let currentChallenge = null;
 let lives = 5;
+
+function showNextChallenge() {
+  if (remainingChallenges.length === 0) {
+    document.getElementById("feedback").textContent = "🎉 You completed all challenges!";
+    document.getElementById("gameImage").style.display = "none";
+    return;
+  }
+
+    const randomIndex = Math.floor(Math.random() * remainingChallenges.length);
+  currentChallenge = remainingChallenges.splice(randomIndex, 1)[0];
+  document.getElementById("gameImage").src = currentChallenge.image;
+  document.getElementById("userAnswer").value = "";
+  document.getElementById("feedback").textContent = "";
+}
 
 function checkAnswer() {
   const input = document.getElementById("userAnswer").value.trim().toLowerCase();
   const feedback = document.getElementById("feedback");
   const livesDisplay = document.getElementById("lives");
 
-  const correctAnswers = challenges[current].answers.map(ans => ans.toLowerCase());
+  const correctAnswers = currentChallenge.answers.map(ans => ans.toLowerCase());
 
-  if (correctAnswers.includes(input)) {
-    feedback.textContent = "✅ Correct!";
-    current++;
 
-    if (current < challenges.length) {
+    if (remainingChallenges.length > 0) {
       showNextChallenge();
     } else {
       feedback.textContent = "🎉 You completed all challenges!";
@@ -51,7 +63,7 @@ function checkAnswer() {
   } else {
     lives--;
     livesDisplay.textContent = lives;
-    updateHealthBar(); // ✅ Update bar after losing a life
+    updateHealthBar();
 
     if (lives > 0) {
       feedback.textContent = "❌ Wrong! Try again.";
@@ -64,19 +76,13 @@ function checkAnswer() {
   document.getElementById("userAnswer").value = "";
 }
 
-
-function showNextChallenge() {
-  document.getElementById("gameImage").src = challenges[current].image;
-  document.getElementById("userAnswer").value = "";
-  document.getElementById("feedback").textContent = "";
-}
-
 // Load the first image when the page loads
 window.onload = function () {
   showNextChallenge();
   updateHealthBar();
 };
-// Make Enter key act like clicking the button
+
+
 document.getElementById("userAnswer").addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     checkAnswer();
