@@ -19,7 +19,7 @@ const challenges = [
   { image: "images/img17.jpg", answers: ["Aging Untouchable", "aging untouchable"]},
   { image: "images/img18.jpg", answers: ["Horned Warrior", "horned warrior"]},
   { image: "images/img19.png", answers: ["CurseBlade", "curseblade"]},
-  { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss"]},
+  { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss", "final boss"]},
   { image: "images/img20.jpg", answers: ["Messmer Soldier", "messmer soldier"]},
   { image: "images/img21.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
   { image: "images/img22.jpg", answers: ["Skeleton Beast", "skeleton beast"]},
