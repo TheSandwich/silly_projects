@@ -23,7 +23,17 @@ const challenges = [
   { image: "images/royal_sentinel_enemy.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
   { image: "images/skeleton_beast.jpg", answers: ["Skeleton Beast", "skeleton beast"]},
   { image: "images/holy_knight_hodrick.jpg", answers: ["Holy Knight Hodrick", "holy knight hodrick"]},
-  { image: "images/knight-slayer-tsorig.jpg", answers: ["Knight Slayer Tsorig", "knight slayer tsorig"]}
+  { image: "images/knight-slayer-tsorig.jpg", answers: ["Knight Slayer Tsorig", "knight slayer tsorig"]},
+  { image: "images/putrescentknight.webp", answers: ["Putrescent Knight", "putrescent knight"]},
+  { image: "images/Images_29.webp", answers: ["Heolstor The Nightlord", "heolstor the nightlord"]},
+  { image: "images/gladius.webp", answers: ["Gladius", "gladius"]},
+  { image: "images/Nito.jpg", answers: ["Nito", "nito"]},
+  { image: "images/pursuer.jpg", answers: ["Pursuer", "The Pursuer", "pursuer", "the pursuer"]},
+  { image: "images/ruin_sentinels.png", answers: ["Ruin Sentinel", "ruin sentinel"]},
+  { image: "images/elden_ring_leda.jpg", answers: ["Needle Knight Leda", "needle knight leda"]},
+  { image: "images/Bayle_the_Dread.webp", answers: ["Bayle The Dread", "bayle the dread"]},
+  { image: "images/Mother_of_Fingers.webp", answers: ["Metyr Mother of Fingers", "metry mother of fingers", "Metry", "metry"]},
+  { image: "images/high-lord-wolnir.jpg", answers: ["High Lord Wolnir", "high lord wolnir"]},
 
 ];
 
