@@ -13,11 +13,17 @@ const challenges = [
   { image: "images/corvian.jpg", answers: ["Corvian", "corvian"]},
   { image: "images/treant_gardener.jpg", answers: ["Treant Gardener", "treant gardener"]},
   { image: "images/ugly.jpg", answers: ["Chaos Eater", "chaos eater"]},
-  { image: "images/divine_beast", answers: ["Divine Beast Warrior", "divine beast warrior"]},
-  { image: "", answers: [""]},
-  { image: "", answers: [""]},
-  { image: "", answers: [""]},
-  { image: "", answers: [""]}
+  { image: "images/divine_beast.png", answers: ["Divine Beast Warrior", "divine beast warrior"]},
+  { image: "images/divine_beast_dancing_lion.png", answers: ["Divine Beast Dancing Lion", "dvine beast dancing lion"]},
+  { image: "images/rellana_twin_moon_knight2.png", answers: ["Rellana", "rellana"]},
+  { image: "images/winter.jpg", answers: ["Winter Lantern", "winter lantern"]},
+  { image: "images/horned_warrior.jpg", answers: ["Horned Warrior", "horned warrior"]},
+  { image: "images/curseblade_bosses.png", answers: ["CurseBlade", "curseblade"]},
+  { image: "images/messmer_soldier.jpg", answers: ["Messmer Soldier", "messmer soldier"]},
+  { image: "images/roayl_sentinel_enemy.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
+  { image: "images/skeleton_beast.jpg", answers: ["Skeleton Beast", "skeleton beast"]},
+  { image: "images/", answers: ["Holy Knight Hodrick", "holy knight hodrick"]},
+  { image: "images/knight-slayer-tsorig.jpg", answers: ["Knight Slayer Tsorig", "knight slayer tsorig"]}
 
 ];
 
