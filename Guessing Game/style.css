@@ -14,9 +14,9 @@ p {
 
 .game-container {
   padding: 20px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
-  margin-top: 11px;
 }
 
 .game-image {
@@ -36,6 +36,7 @@ p {
 
 .layout {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
@@ -52,6 +53,12 @@ p {
   background-image: url(images/left-side-img.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#left_img, #right_img {
+  width: 200px;
+  max-width: 30vw;
+  height: auto;
 }
 
 #right_img {
