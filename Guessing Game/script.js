@@ -19,6 +19,7 @@ const challenges = [
   { image: "images/img17.jpg", answers: ["Winter Lantern", "winter lantern"]},
   { image: "images/img18.jpg", answers: ["Horned Warrior", "horned warrior"]},
   { image: "images/img19.png", answers: ["CurseBlade", "curseblade"]},
+  { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss"]},
   { image: "images/img20.jpg", answers: ["Messmer Soldier", "messmer soldier"]},
   { image: "images/img21.jpg", answers: ["Royal Sentinel", "royal sentinel"]},
   { image: "images/img22.jpg", answers: ["Skeleton Beast", "skeleton beast"]},
@@ -33,9 +34,7 @@ const challenges = [
   { image: "images/img31.jpg", answers: ["Needle Knight Leda", "needle knight leda"]},
   { image: "images/img32.webp", answers: ["Bayle The Dread", "bayle the dread"]},
   { image: "images/img33.webp", answers: ["Metyr Mother of Fingers", "metry mother of fingers", "Metry", "metry"]},
-  { image: "images/img34.jpg", answers: ["High Lord Wolnir", "high lord wolnir"]},
-  { image: "images/All_Seeing_Wirzard.jpg", answers: ["The All Seeing Wizard", "Final Boss"]}
-
+  { image: "images/img34.jpg", answers: ["High Lord Wolnir", "high lord wolnir"]}
 ];
 
 let remainingChallenges = [...challenges];
