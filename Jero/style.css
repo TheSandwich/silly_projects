@@ -16,7 +16,7 @@ h1 {
 .intro {
   background: url('images/jeopardy-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  color: darkblue;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   height: 100vh;
