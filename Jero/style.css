@@ -12,6 +12,71 @@ h1 {
   color: gold;
 }
 
+/* Intro screen styling */
+.intro {
+  background: url('images/jeopardy-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-screen {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.6);
+  animation: fadeIn 1s ease forwards;
+}
+
+.title-screen h1 {
+  font-size: 3rem;
+  color: gold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.title-screen p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Start button */
+.start-button {
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 10px gold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #f7d400;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+
 /* Game Layout Grid */
 .game-layout {
   display: grid;
@@ -19,6 +84,11 @@ h1 {
   gap: 5px;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+#question-audio {
+  display: block;
+  margin: 20px auto;
 }
 
 /* Category Headers */
